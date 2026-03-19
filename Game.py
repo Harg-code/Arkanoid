@@ -3,13 +3,14 @@
 import pygame
 
 from Menu import Menu
+from code.const import WIN_WITH, WIN_HEIGTH
 
 
 class Game:
 
     def __init__(self):
         pygame.init()
-        self.window = pygame.display.set_mode(size=(600, 480))
+        self.window = pygame.display.set_mode(size=(WIN_WITH , WIN_HEIGTH))
 
 
     def run(self):
